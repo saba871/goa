@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+#first{
+    text-decoration-line: overline;
+    text-decoration-style: dotted;
+}
+#second{
+    text-decoration-line: line-through;
+    text-decoration-style: dashed;
+}
+#third{
+    text-decoration-line:underline;
+    text-decoration-style: solid;
+}

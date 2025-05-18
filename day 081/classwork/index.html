@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number1 = 10;
+      let number2 = 12;
+      if (number1 > number2) {
+        console.log(number1);
+      } else {
+        console.log(number2);
+      }
+
+      let score = 50;
+      let grade;
+      if (score > 90) {
+        grade = "A";
+      }
+      if (score > 80) {
+        grade = "B";
+      }
+      if (score > 70) {
+        grade = "C";
+      } else {
+        grade = console.log("You Failed, sorry!");
+      }
+      console.log(grade);
+      // length ითვლის ელემეტების რაოდენობას "hello" -> 5
+      console.log("hello".length);
+      // OOP - Object Oriented Programming
+      // name არის კუთვნილება
+      // 'saba' მნიშვბელობა
+      // ობიეცტის შექმნა
+      const me = {
+        name: "saba",
+        age: 18,
+      };
+      let you = {
+        name: "nika",
+      };
+      me.name = "lasha";
+      // ობიექტის დამატება
+      me.lastname = "Tabatadze";
+      // ობიექტის ამოშლა
+      delete me.age
+      console.log(me);
+    </script>
+  </body>
+</html>

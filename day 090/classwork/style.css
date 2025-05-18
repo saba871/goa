@@ -1,0 +1,16 @@
+.button {
+  width: 200px;
+  height: 30px;
+  border: none;
+  transition: 0.5s;
+  color: white;
+  background-color: tomato;
+  border-radius: 20px;
+}
+.button:hover {
+  transform: translateY(-10px);
+  background-color: rgb(255, 0, 0);
+}
+.button:active {
+  background-color: rgb(24, 24, 24);
+}

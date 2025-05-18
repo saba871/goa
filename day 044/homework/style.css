@@ -1,0 +1,22 @@
+table,th,td{
+    border: 1px dashed;
+}
+tr:nth-child(even) {
+    background-color: skyblue;
+}
+tr:nth-child(odd) {
+    background-color: tomato;
+}
+ul{
+    text-align: center;
+    color: rgb(255, 204, 2);
+}
+#first:hover {
+    color: aquamarine;
+}
+#second:hover {
+    color:seagreen;
+}
+#third:hover {
+    color: crimson;
+}

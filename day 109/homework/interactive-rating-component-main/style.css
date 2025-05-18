@@ -1,0 +1,55 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+.container {
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    border: none;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 20px;
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 24%);
+    color: white;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+.submit button {
+    width: 100%;
+    padding: 12px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit button:hover {
+    background-color: hsl(25, 100%, 65%);
+}

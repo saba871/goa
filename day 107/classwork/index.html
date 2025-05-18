@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="add">Add Product</button>
+    <button id="delete">Delete product</button>
+    <button id="update">Update product</button>
+
+    <br />
+    <br />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Product Name</th>
+          <th>Product Quantity</th>
+          <th>Product Price</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+
+    <script>
+      //
+      const addBtn = document.querySelector("#add");
+      const deleteBtn = document.querySelector("#delete");
+
+      const tbody = document.querySelector("tbody");
+      const p = document.querySelector("p");
+
+      function generateId() {
+        return Math.random().toString(36).substring(2, 6);
+      }
+
+      let products = [];
+
+      const createTr = (
+        productId,
+        productName,
+        productQuantity,
+        productPrice
+      ) => {
+        const newTr = document.createElement("tr");
+
+        const idTd = document.createElement("td");
+        idTd.textContent = productId;
+
+        const nameTd = document.createElement("td");
+        nameTd.textContent = productName;
+
+        const quantityTd = document.createElement("td");
+        quantityTd.textContent = productQuantity;
+
+        const priceTd = document.createElement("td");
+        priceTd.textContent = productPrice;
+
+        newTr.appendChild(idTd);
+        newTr.appendChild(nameTd);
+        newTr.appendChild(quantityTd);
+        newTr.appendChild(priceTd);
+
+        return newTr;
+      };
+
+      const render = (products) => {
+        tbody.innerHTML = "";
+        for (let i = 0; i < products.length; i++) {
+          tbody.appendChild(
+            createTr(
+              products[i].id,
+              products[i].productName,
+              products[i].productQuantity,
+              products[i].productPrice
+            )
+          );
+        }
+
+        const totalPrice = products.reduce((prev, cur) => {
+          return prev + cur.productPrice * cur.productQuantity;
+        }, 0);
+
+        p.textContent = `Total Price: ${totalPrice}`;
+      };
+
+      addBtn.addEventListener("click", () => {
+        const productName = prompt("Please enter product name");
+        const productQuantity = parseInt(
+          prompt("Please enter product quantity")
+        );
+        const productPrice = parseFloat(prompt("Please enter product price"));
+
+        if (!productName || isNaN(productQuantity) || isNaN(productPrice)) {
+          alert("Please fill all fields correctly");
+          return;
+        }
+
+        products.push({
+          id: generateId(),
+          productName,
+          productQuantity,
+          productPrice,
+        });
+
+        render(products);
+      });
+
+      deleteBtn.addEventListener("click", () => {
+        const id = prompt("Please enter product id to delete:");
+        products = products.filter((product) => product.id !== id);
+        render(products);
+      });
+
+      //
+      const result = document.getElementById("update");
+      result.addEventListener("click", () => {
+        const id = prompt("Enter the ID of the product you want to update:");
+        let product = null;
+
+        for (let i = 0; i < products.length; i++) {
+          if (products[i].id === id) {
+            product = products[i];
+            break;
+          }
+        }
+
+        if (!product) {
+          alert("Product not found!");
+          return;
+        }
+
+        const newName = prompt("Enter new product name:", product.productName);
+        const newQuantity = parseInt(
+          prompt("Enter new quantity:", product.productQuantity)
+        );
+        const newPrice = parseFloat(
+          prompt("Enter new price:", product.productPrice)
+        );
+
+        product.productName = newName;
+        product.productQuantity = newQuantity;
+        product.productPrice = newPrice;
+
+        render(products);
+      });
+    </script>
+  </body>
+</html>

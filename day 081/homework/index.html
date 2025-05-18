@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myobject = {
+        name: "saba",
+        surname: "Tabatadze",
+        age: "18",
+      };
+      let friendobject = {
+        name: "luka",
+        surname: "arseindze",
+        age: 19,
+      };
+      console.log(friendobject.name, friendobject.surname, friendobject.age);
+      console.log(friendobject.name);
+      console.log(friendobject.surname);
+      console.log(friendobject.age);
+      friendobject.age = 18;
+      friendobject.name = "nika";
+      console.log(friendobject.name, friendobject.age);
+      myobject.livePlace = "Tbilisi . gldani";
+      friendobject.livePlace = "Tbilisi , musxiani";
+      console.log(myobject.livePlace);
+      console.log(friendobject.livePlace);
+      delete myobject.livePlace;
+      delete friendobject.livePlace;
+      console.log("hello world".length);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: rgb(64, 64, 64);
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  padding: 40px 20px;
+  text-align: center;
+  width: 800px;
+  height: 500px;
+  background-color: white;
+  margin: 20px;
+}
+
+#top-section h3 {
+  font-size: 16px;
+  color: orange;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#top-section h2 {
+  font-size: 32px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#top-section p {
+  font-size: 16px;
+  color: grey;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#bottom-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial {
+  background: white;
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid orange;
+}
+.name {
+  font-weight:900;
+}
+.name , p {
+  padding: 5px;
+  margin: 5px;
+}
+p {
+  font-size: 13px;
+}

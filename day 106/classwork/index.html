@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #c8c8c8;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click me</button>
+
+    <script>
+      const btn = document.querySelector("button");
+      const body = document.body;
+
+      const createP = (text, id) => {
+        const newP = document.createElement("p");
+        newP.textContent = text;
+        newP.id = id;
+        return newP;
+      };
+
+      btn.addEventListener("click", () => {
+        const text = prompt("Enter p text: ");
+        const id = prompt("Enter id text");
+
+        body.appendChild(text, id);
+      });
+    </script>
+  </body>
+</html>

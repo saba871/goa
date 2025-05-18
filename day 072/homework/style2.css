@@ -1,0 +1,98 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  width: 650px;
+  height: 400px;
+  display: flex;
+  margin: 50px;
+  margin-left: -150px;
+}
+.icon {
+  display: flex;
+}
+.sedans,
+.suvs,
+.luxury {
+  width: 100vh;
+  color: white;
+  padding: 20px;
+}
+.sedans {
+  background-color: orange;
+}
+.suvs {
+  background-color: cadetblue;
+}
+.luxury {
+  background-color: teal;
+}
+#first {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(124, 96, 45);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50px);
+}
+#second {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(55, 95, 96);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50px);
+}
+#third {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(29, 79, 79);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50px);
+}
+#one,
+#two,
+#three {
+  width: 200px;
+  height: 50px;
+  margin: 50px;
+  border-radius: 15px;
+  border: none;
+  transition: 0.5s;
+}
+#one {
+  color: orange;
+}
+#two {
+  color: cadetblue;
+}
+#three {
+  color: teal;
+}
+#one:hover,
+#two:hover,
+#three:hover {
+  color: black;
+  border: 2px solid black;
+  transform: translateY(-12px);
+}
+#one:active {
+  background-color: black;
+  color: orange;
+}
+#two:active {
+  background-color: black;
+  color: cadetblue;
+}
+#three:active {
+  background-color: black;
+  color: teal;
+}

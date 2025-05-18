@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1) ჩაშენებული ობიექტები არის ობიექტები, რომლებიც JavaScript-ის ენას აქვს ჩამონტაჟებული და მათი გამოყენება პირდაპირ შეგვიძლია.
+      // 2) stack ინახავს number , string ,boolean
+      // ხოლო heap ინახავს შედარევბით რთულ ობიექტებს მაგალითად object , array , function
+      //
+      const user = {
+        firstName: prompt("Enter your first name:"),
+        lastName: prompt("Enter your last name:"),
+        age: Number(prompt("Enter your age:")),
+      };
+      console.log(user);
+      user.firstName = "jemala";
+      console.log(user);
+
+      // დაყავს ქვედა მთელ რიცხვამდე
+      console.log(Math.floor(4.7)); 
+      console.log(Math.floor(9.9)); 
+      console.log(Math.floor(-2.5)); 
+
+      // ამრგვალებ ზედა მთელ რიცხვამდე
+      console.log(Math.ceil(4.2));
+      console.log(Math.ceil(9.1));
+      console.log(Math.ceil(-2.7));
+
+      // ამრგვალებს უახლოს მთელ რიცხვამდე
+      console.log(Math.round(4.5));
+      console.log(Math.round(4.4));
+      console.log(Math.round(-3.6));
+
+      // აცლის ათწილადს
+      console.log(Math.trunc(4.9));
+      console.log(Math.trunc(-5.8));
+      console.log(Math.trunc(0.99));
+
+      //   random რიცხვი
+      console.log(Math.random() * 10);
+      console.log(Math.floor(Math.random() * 100));
+    </script>
+  </body>
+</html>

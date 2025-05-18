@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+}
+a:hover {
+  color: blue;
+  font-size: larger;
+  background-color: red;
+}
+a:active {
+  color: green;
+}
+table,
+th,
+td {
+  border: 1px solid green;
+}
+
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: center;
+  border-collapse: collapse;
+}
+th {
+  background-color: orange;
+}
+#first,#second,#third {
+  background-color: orange;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "group-58",
+  "version": "1.0.0",
+  "description": "random",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "saba tabatadze",
+  "license": "ISC",
+  "dependencies": {
+    "superheros": "^1.0.0"
+  }
+}

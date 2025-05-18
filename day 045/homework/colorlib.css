@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(65, 165, 65);
+}
+form {
+    background-color: white;
+    width: 300px;
+    height: 450px;
+}
+button {
+    background-color: rgb(43, 141, 43);
+    color: white;
+    width: 50%;
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+}
+button:hover {
+    background-color: white;
+    color: rgb(43, 151, 43);
+    border: 1px solid rgb(43, 151, 43);
+}
+h1 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+p {
+    padding-right: 50%;
+}
+input {
+    margin-bottom: 10px;
+    width: 70%;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 9px;
+}
+#first {
+    height: 50px;
+    width: 70%;
+}

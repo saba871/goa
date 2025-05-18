@@ -1,0 +1,20 @@
+body {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+#first {
+  font-weight: 100;
+}
+#second {
+  font-weight: 700;
+}
+#third {
+  font-weight: 900;
+}
+a:hover {
+  color: yellow;
+  text-decoration-line: line-through;
+  text-decoration-style: dotted;
+}

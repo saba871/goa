@@ -1,0 +1,56 @@
+
+body {
+    background-color: rgb(29, 29, 29);
+    color: white; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+.rating-card {
+    background-color: rgb(44, 44, 44); 
+    border-radius: 15px; 
+    padding: 30px 25px;
+    text-align: center; 
+    width: 320px;
+}
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px; 
+}
+
+p {
+    font-size: 14px; 
+    color: rgb(183, 179, 179); 
+    margin-bottom: 20px; 
+    line-height: 1.5; 
+}
+
+.rating-buttons {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+.rating-buttons button {
+    background-color: rgb(77, 77, 77); 
+    border: none; 
+    border-radius: 50%;
+    color: white; 
+    font-size: 16px; 
+    width: 45px;
+    height: 45px; 
+}
+.rating-buttons button:hover {
+    background-color: orange; 
+}
+.submit-button {
+    background-color: orange;
+    border: none;
+    border-radius: 25px; 
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px; 
+}
+.submit-button:hover {
+    background-color: darkorange;
+}

@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.test {
+  background-color: rgba(0, 128, 0, 0.604);
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+  transition: 2s;
+}
+.test:hover {
+  transform: rotateZ(360deg);
+  background-color: rgba(255, 0, 0, 0.532);
+}

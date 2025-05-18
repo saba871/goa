@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+}
+.main {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 16px;
+    width: 400px;
+    height: 400px;
+}
+.result-card{
+    background-color:rgb(76, 0, 255);
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result-card .score-circle {
+    background-color: #5b58f6;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    color: white;
+    font-size: 25px;
+}
+.result-card .greet {
+    font-size: 25px;
+    margin: 10px 0;
+}
+.result-card .description {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    color: #d1c7ff;
+}
+.summary-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.summary-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.summary-card li {
+    display: flex;
+    justify-content: space-between;
+    margin:  10px 0;
+    font-size: 20px;
+}
+.reaction {
+    color: #f25268;
+}
+
+.memory {
+    color: #ffc400;
+}
+
+.verbal {
+    color: #27bede;
+}
+
+.visual {
+    color: #7f5eff;
+}
+.continue-button {
+    background-color: #0400ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    align-self: center;
+}
+.continue-button:hover {
+    background-color: #ebebeb;
+    color: black;
+}

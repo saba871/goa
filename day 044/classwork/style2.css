@@ -1,0 +1,14 @@
+ul {
+    /* list-style: square inside none; */
+    color: tomato;
+    list-style-type:square;
+    list-style-position: inside;
+    list-style-image: none;
+}
+ol {
+    list-style: lower-greek;
+    color: springgreen;
+}
+ul , ol :hover {
+    background-color: blue;
+}

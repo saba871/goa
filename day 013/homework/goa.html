@@ -1,0 +1,74 @@
+<!-- შექმენით Multi page website-ი გოაზე. საიტზე უნდა გქონდეთ რეგისტრაციის გვერდი,
+სადაც მომხარებელს შემოატანინებთ სახელს, გვარს, ემაილს, პაროლს, გენდერს და ასევე გექნებათ 
+drop down menu(ჩამოსაშლელი მენიუ), რომელშიც მომხარებელი აირჩევს სასურველ speed-ს
+(გაკვეთილების რაოდენობა კვირაში). თითოეული input-ის შეყვანა/მონიშვნა/არჩევა უნდა იყოს აუცილებელი. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOA</title>
+  </head>
+  <body>
+    <center>
+      <form>
+        <label for="firstname">enter your firstname</label>
+        <input
+          id="firstname"
+          type="firstname"
+          placeholder="enter your firstname"
+          name="firstname"
+          required
+        />
+        <br />
+        <br />
+        <label for="lastname">enter your lastname</label>
+        <input
+          id="lastname"
+          type="lastname"
+          placeholder="enter your lastname"
+          name="lastname"
+          required
+        />
+        <br />
+        <br />
+        <label for="email">enter your email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="enter your email"
+          name="email"
+          required
+        />
+        <br />
+        <br />
+        <label for="password">enter your password</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="enter your password"
+          name="password"
+          required
+        />
+        <br />
+        <br />
+        <input type="radio" id="male" value="male" name="gender" />
+        <label for="male">male</label>
+        <input type="radio" id="female" value="female" name="gender" />
+        <label for="female">female</label>
+        <br />
+        <br />
+        <select name="which speed do you want ">
+          <option>speeed 1</option>
+          <option>speeed 2</option>
+          <option>speeed 3</option>
+          <option>speeed 4</option>
+        </select>
+        <br />
+        <br />
+        <button><a href="goa2.html">registar</a></button>
+      </form>
+    </center>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: white;
+  border-bottom: 1px solid white;
+  height: 60px;
+  position: fixed;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #6c63ff;
+}
+
+.create-account {
+  background-color: purple;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.create-account:hover {
+  background-color: #722f9a;
+}

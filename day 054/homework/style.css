@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f8fb;
+}
+
+.card {
+  width: 360px;
+  background: white;
+  border-radius: 8px;
+}
+
+.card-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-header h1 {
+  color: #0096a9;
+  margin-bottom: 10px;
+}
+
+.card-header p {
+  color: #6c7a86;
+  margin-bottom: 5px;
+}
+
+.card-header p {
+  color: #a1d665;
+  font-weight: bold;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: white;
+}
+
+.subscription {
+  text-align: center;
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+
+.subscription h2 {
+  color: rgb(0, 136, 255);
+}
+
+.subscription button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: greenyellow;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscription button:hover {
+  background: green;
+}
+
+.features {
+  padding-left: 10px;
+}
+
+.features h3 {
+  color: #0096a9;
+  margin-bottom: 10px;
+}
+
+.features ul {
+  padding: 0;
+  margin: 0;
+}
+
+.features ul li {
+  color: #6c7a86;
+  margin-bottom: 8px;
+}
