@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./cart.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <p>Saba Tabatadze</p>
+
+            <div class="first-logos">
+                <ul>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">facbook</a></li>
+                    <li><a href="#">youtube</a></li>
+                    <li><a href="#">github</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="low-nav-bar">
+            <div class="main">
+                <div class="components">
+                    <img src="/img/Screenshot 2025-05-18 143050.png" width="170px" height="50px">
+                </div>
+
+                <div class="nav-bar">
+                    <ul>
+                        <li><a href="#" onclick="home()">Home</a></li>
+                        <li><a href="#" onclick="catalog()">Catalog</a></li>
+                        <li><a href="#" onclick="about()">About</a></li>
+                        <li><a href="#" onclick="contact()">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="second-logos">
+                    <ul>
+                        <li><a href="#" onclick="profile()">Profile</a></li>
+                        <li><a href="#">Rating</a></li>
+                        <li><a href="#" onclick="cart()">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-nav">
+            <div class="second-div">
+                <p>Product</p>
+                <p>Price</p>
+                <p>Quantity</p>
+                <p>Total</p>
+                <p>Delete item</p>
+            </div>
+        </div>
+
+        <div class="text">
+            <p>Your cart is empty</p>
+        </div>
+
+        <div class="promo-code">
+            <label>Have a promo code for checkout?</label>
+            <br>
+            <input type="text" placeholder="Enter Promo Code">
+            <button>Apply</button>
+        </div>
+
+        <div class="note">
+            <label>Add a note to your order.</label>
+            <br>
+            <textarea></textarea>
+        </div>
+
+        <div class="continue">
+            <a href="#" onclick="catalog()">Continue shopping</a>
+        </div>
+
+        <div class="left">
+            <h2>Order Summary</h1>
+            <div class="left-text">
+                <p>Total:</p>
+                <p>0 Item(s)</p>
+            </div>
+
+            <div class="second-left">
+                <h2>TOTAL PRICE</h2>
+                <p>0$</p>
+            </div>
+
+            <div class="buttons">
+                <button>Clear Cart</button>
+                <br>
+                <button>Go to Cheakout</button>
+            </div>
+
+            <div class="test">
+                <p>LuliniShop process all orders in USD. Shipping & taxes calculated at checkout.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="ran">
+                <h2>Get our latest news and special sales</h2>
+                <p>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+            </div>
+
+            <div class="lastest">
+                <input type="text" placeholder="Email" required>
+                <button onclick="home()">Submit</button>
+            </div>
+        </footer>
+        <script src="./cart.js"></script>
+    </body>
+</html>

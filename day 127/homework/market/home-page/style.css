@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    background-color: #2C2C2C;
+    color: #f4f4f4;
+    padding: 20px;
+}
+.first-logos ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.first-logos ul a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+.low-nav-bar {
+    background-color: white;
+}
+.components {
+    cursor: pointer;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    width: 1000px;
+    padding-left: 170px;
+}
+.nav-bar ul, .second-logos ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav-bar ul a, .second-logos ul a {
+    text-decoration: none;
+    color: #555555;
+}
+.image img {
+    width: 1340px;
+    height: 515px;
+}
+.text-in {
+    padding-left: 250px;
+    margin-top: -350px;
+    color: black;
+}
+.text-in p {
+    margin-bottom: 20px;
+}
+.text-in h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text-in button {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #2C2C2C;
+    color: #f4f4f4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.text-in button:hover {
+    background-color: #555555;
+    width: 130px;
+}
+.categories {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    margin-top: -100px;
+}
+.categories div {
+    width: 400px;
+    height: 320px;
+    margin-top: 250px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+}
+#first p, #second p, #third p {
+    margin-bottom: 15px;
+}
+#first button, #second button, #third button {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#first button:hover, #second button:hover, #third button:hover {
+    background-color: #cbcbcb;
+}
+#first {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/jewelery.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#second {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/boy.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#third {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/girl.png");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.last-photo img {
+    width: 1345px;
+}
+.last-text {
+    margin-left: 600px;
+    margin-top: -350px;
+    color: black;
+}
+.last-text p {
+    margin-bottom: 20px;
+}
+.last-text h1 {
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.last-buttons button{
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #2C2C2C;
+    color: #f4f4f4;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.last-buttons button:hover {
+    background-color: #555555;
+    width: 130px;
+}
+footer {
+    margin-top: 200px;
+    color: #f4f4f4;
+    background-color: #2C2C2C;
+    padding-left: 250px;
+    padding-top: 30px;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    line-height: 35px;
+}
+.ran {
+    width: 620px;
+}
+.lastest input {
+    width: 110px;
+    height: 40px;
+    background-color: #2C2C2C;
+    color: #f4f4f4;
+    border: 1px solid white;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.lastest button {
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
