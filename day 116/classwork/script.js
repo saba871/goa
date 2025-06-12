@@ -19,6 +19,5 @@ class User {
 const user1 = new User("tabo@gmail.com", "saba", "sabatabatadze");
 
 console.log(user1);
-
 // class არის ერთგვარი ქარხანა გეგმა რომლითაც ვქმნით რაიმეს
 // პროტოტიპი არის საერთო გეგმა ჩემს ქარხანაში
