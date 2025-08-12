@@ -1,0 +1,1 @@
+const getTours = (req, res) => {};
